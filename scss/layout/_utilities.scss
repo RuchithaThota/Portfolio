@@ -31,7 +31,7 @@
   line-height: 1.6;
   letter-spacing: 2px;
   @include responsive(phone) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .heading-primary {
@@ -84,12 +84,9 @@
     color: $secondary--two;
     font-weight: $normal;
     max-width: 50rem;
-    width: 95%;
+    width: 92%;
     margin: auto;
     line-height: 1.6;
-    @include responsive(phone) {
-      font-size: 1rem;
-    }
     &--lt {
       color: $white;
     }
