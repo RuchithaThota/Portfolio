@@ -91,7 +91,7 @@ textarea {
 }
 @media screen and (max-width: 600px) {
   .heading-primary {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -560,6 +560,7 @@ textarea {
 @media screen and (max-width: 600px) {
   .footer__upper {
     display: block;
+    padding: 4rem 0;
   }
 }
 .footer__row-1 {
