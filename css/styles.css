@@ -91,7 +91,7 @@ textarea {
 }
 @media screen and (max-width: 600px) {
   .heading-primary {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -103,6 +103,11 @@ textarea {
   letter-spacing: 3px;
   position: relative;
   margin-bottom: 3.5rem;
+}
+@media screen and (max-width: 600px) {
+  .sec-heading__main {
+    font-size: 2.2rem;
+  }
 }
 .sec-heading__main--lt {
   color: #fff;
@@ -178,6 +183,8 @@ textarea {
 }
 .header__logo-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   justify-content: center;
   align-items: center;
 }
@@ -584,9 +591,7 @@ textarea {
   }
 }
 .footer__lower {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 2rem 0;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -594,9 +599,16 @@ textarea {
   color: #eee;
 }
 .footer__lower a {
+  color: #0062b9;
   text-decoration: underline;
+  text-underline-offset: 2px;
   font-weight: bold;
   margin-left: 5px;
+}
+@media screen and (max-width: 600px) {
+  .footer__lower {
+    font-size: 0.9rem;
+  }
 }
 .footer__socials {
   margin-top: 2rem;
