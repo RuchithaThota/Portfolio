@@ -1,0 +1,45 @@
+.home {
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba($primary, 0.8),
+      rgba($primary, 0.8)
+    ),
+    url("/assets/svg/common-bg.svg");
+  min-height: 100vh;
+  @include responsive(phone) {
+    min-height: unset;
+  }
+  &__content {
+    padding-top: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    @include responsive(phone) {
+      transform: translate(0, 0);
+      position: static;
+      margin: 0 auto;
+      padding: 10rem 0;
+    }
+  }
+  &__info {
+    max-width: 50rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  &__cta {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  &__mouse-scroll-cont {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    @include responsive(tab) {
+      display: none;
+    }
+  }
+}

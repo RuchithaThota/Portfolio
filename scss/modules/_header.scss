@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: $white;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  &__container {
+    @include flex-setting(header__container);
+    padding: 1rem 5rem;
+    @include responsive(tab) {
+      padding: 1rem 1.5rem;
+    }
+  }
+  &__sm-menu {
+    display: none;
+  }
+  &__logo-container {
+    @include flex-setting(header__logo-container);
+  }
+  &__logo-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary;
+    overflow: hidden;
+    margin-right: 1rem;
+    @include responsive(tab) {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.8rem;
+    }
+  }
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  &__logo-name {
+    font-size: $fs-xnormal;
+    color: $secondary;
+    font-weight: $bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    @include responsive(tab) {
+      font-size: $fs-normal;
+    }
+  }
+  &__links {
+    display: flex;
+  }
+  &__link {
+    color: $secondary;
+    font-size: $fs-normal;
+    text-transform: uppercase;
+    font-weight: $bolder;
+    font-family: $font-family;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    padding: 1rem 2rem;
+    @include responsive(tab) {
+      font-size: $fs-small;
+      padding: 1rem;
+    }
+  }
+  &__link:hover {
+    color: $primary;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+    &__sm-menu {
+      display: block;
+    }
+    #ham-menu,
+    #ham-menu-close {
+      width: 3rem;
+      display: block;
+      width: 100%;
+    }
+    #ham-menu-close {
+      display: none;
+    }
+    &__sm-links {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      transition: all 0.3s;
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__sm-link-wrapper {
+      a {
+        display: block;
+        text-transform: uppercase;
+        font-weight: $bolder;
+        text-align: right;
+        padding: 2rem 3rem;
+        border-bottom: 1px solid $link-border-clor;
+        transition: color 0.3s;
+        &:first-child {
+          border-top: 1px solid $link-border-clor;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

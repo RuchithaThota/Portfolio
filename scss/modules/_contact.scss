@@ -1,0 +1,53 @@
+.contact {
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba($primary, 0.8),
+      rgba($primary, 0.8)
+    ),
+    url("/assets/svg/common-bg.svg");
+}
+.contact__form {
+  max-width: 40rem;
+  width: 90%;
+  margin: 6rem auto 0 auto;
+  @include responsive(tab) {
+    margin: 4rem auto 0 auto;
+  }
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba($white, 2);
+  &-field {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  &--label {
+    color: $label--color;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: $bold;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+  }
+  &--input {
+    color: $secondary;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    background: rgba(rgb(240, 240, 240), 1);
+    padding: 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    &::placeholder {
+      color: $placeholder--color;
+      font-weight: $bold;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+  }
+}
+#submitBtn {
+  display: flex;
+  margin-left: auto;
+}
