@@ -54,6 +54,11 @@ textarea {
 .btn:hover {
   transform: translateY(-3px);
 }
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 1rem 4rem;
+  }
+}
 
 .btn--outline {
   border: 1px solid #0062b9;
@@ -91,7 +96,7 @@ textarea {
 }
 @media screen and (max-width: 600px) {
   .heading-primary {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -308,7 +313,7 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 95%;
 }
 @media screen and (max-width: 600px) {
   .home__content {
