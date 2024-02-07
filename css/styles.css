@@ -138,6 +138,11 @@ textarea {
   margin: auto;
   line-height: 1.6;
 }
+@media screen and (max-width: 600px) {
+  .sec-heading__sub {
+    font-size: 1rem;
+  }
+}
 .sec-heading__sub--lt {
   color: #fff;
 }
@@ -322,6 +327,11 @@ textarea {
   max-width: 50rem;
   text-align: center;
   margin: 2rem auto;
+}
+@media screen and (max-width: 600px) {
+  .home__info {
+    margin: 4rem auto;
+  }
 }
 .home__cta {
   margin-top: 4rem;
