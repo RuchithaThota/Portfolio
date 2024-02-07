@@ -328,11 +328,6 @@ textarea {
   text-align: center;
   margin: 2rem auto;
 }
-@media screen and (max-width: 600px) {
-  .home__info {
-    margin: 4rem auto;
-  }
-}
 .home__cta {
   margin-top: 4rem;
   text-align: center;
