@@ -1,0 +1,15 @@
+@import "./base/colors";
+@import "./base/base";
+@import "./base/typography";
+@import "./media-breakpoints";
+//layout
+@import "./layout/flex-settings";
+@import "./layout/utilities";
+// modules
+@import "./modules/header";
+@import "./modules/home";
+@import "./modules/mouse";
+@import "./modules/about";
+@import "./modules/projects";
+@import "./modules/contact";
+@import "./modules/footer";

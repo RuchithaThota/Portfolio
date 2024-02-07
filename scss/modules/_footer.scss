@@ -1,0 +1,64 @@
+.footer {
+  background-color: #000;
+  color: $white;
+  &__cont {
+    max-width: 70rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__upper {
+    @include flex-setting(footer-upper);
+    padding: 4rem 0;
+    @include responsive(tab) {
+      padding: 2rem 0;
+    }
+    @include responsive(phone) {
+      display: block;
+    }
+  }
+  &__row-1 {
+    order: 2;
+    @include responsive(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__row-2 {
+    order: 1;
+    width: 60%;
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+  &__desc {
+    margin-top: 2rem;
+    color: $footer--color;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    @include responsive(tab) {
+      font-size: 1rem;
+    }
+  }
+  &__lower {
+    @include flex-setting(footer-lower);
+    padding: 2rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-top: 1px solid #444;
+    color: $footer--color;
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  }
+  &__socials {
+    margin-top: 2rem;
+    a {
+      margin-right: 1.5rem;
+      i {
+        color: $footer--color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

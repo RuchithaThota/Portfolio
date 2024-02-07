@@ -1,0 +1,13 @@
+@mixin flex-setting($element) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @if ($element== "header__logo-container") {
+    justify-content: center;
+    align-items: center;
+  }
+  @if ($element== "footer-lower") {
+    justify-content: center;
+    align-items: center;
+  }
+}
