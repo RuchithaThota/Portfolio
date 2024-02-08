@@ -313,7 +313,7 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 92%;
+  width: 95%;
 }
 @media screen and (max-width: 600px) {
   .home__content {
@@ -592,12 +592,12 @@ textarea {
 .footer__desc {
   margin-top: 2rem;
   color: #eee;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 @media screen and (max-width: 900px) {
   .footer__desc {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .footer__lower {
@@ -617,7 +617,7 @@ textarea {
 }
 @media screen and (max-width: 600px) {
   .footer__lower {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 .footer__socials {
