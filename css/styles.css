@@ -200,6 +200,7 @@ textarea {
   background-color: #0062b9;
   overflow: hidden;
   margin-right: 1rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   .header__logo-wrapper {
@@ -280,6 +281,9 @@ textarea {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .header__sm-link-wrapper {
+    cursor: pointer;
   }
   .header__sm-link-wrapper a {
     display: block;

@@ -1,3 +1,4 @@
+const headerLogoWrapper = document.querySelector(".header__logo-wrapper");
 const hamburger = document.getElementById("ham-menu");
 const hamburgerClose = document.getElementById("ham-menu-close");
 const menu = document.querySelector(".header__sm-links")
@@ -27,3 +28,7 @@ smLinks.addEventListener("click", (e) => {
         activateHamburger();
     }
 })
+//headerLogo Event
+headerLogoWrapper.addEventListener("click", (e) => {
+    location.href = "index.html";
+});

@@ -26,6 +26,7 @@
     background-color: $primary;
     overflow: hidden;
     margin-right: 1rem;
+    cursor: pointer;
     @include responsive(tab) {
       width: 40px;
       height: 40px;
@@ -104,6 +105,7 @@
       -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     }
     &__sm-link-wrapper {
+      cursor: pointer;
       a {
         display: block;
         text-transform: uppercase;
