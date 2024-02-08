@@ -325,6 +325,7 @@ textarea {
 }
 .home__info {
   max-width: 50rem;
+  width: 100%;
   text-align: center;
   margin: 2rem auto;
 }
